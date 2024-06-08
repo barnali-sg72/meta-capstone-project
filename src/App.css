@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Karla");
+
 .App {
   text-align: center;
 }
@@ -28,11 +30,90 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 900px;
+}
+
+/* HEADER STYLES */
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  margin-left: 20px;
+  margin-right: 100px;
+}
+
+/* NAV STYLES */
+
+nav {
+  flex-grow: 2;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  padding: 20px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item h6 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.footer-item ul {
+  padding-left: 5px;
+}
+
+.footer-item li {
+  list-style: none;
+  text-align: start;
+}
+
+.footer-item li a {
+  text-decoration: none;
+}
+
+/* TEXT FONTS */
+
+.lead-text {
+  font-family: 'Karla';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-family: 'Karla';
+  font-size: 20px;
+  font-weight: bolder;
 }
