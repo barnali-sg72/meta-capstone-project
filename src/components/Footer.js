@@ -5,15 +5,15 @@ function Footer() {
         <>
             <footer>
                 <div className="footer-logo">
-                    <img src={logo} height="300" width="200" alt="logo"/>
+                    <img src={logo} alt="logo"/>
                 </div>
                 <div className="footer-item"> 
                     <h6 className="section-title">DOORMAT NAVIGATION</h6>
                     <ul>
-                        <li className="lead-text"><a href="#">HOME</a></li>
+                        <li className="lead-text"><a href="/">HOME</a></li>
                         <li className="lead-text"><a href="#">ABOUT</a></li>
                         <li className="lead-text"><a href="#">MENU</a></li>
-                        <li className="lead-text"><a href="#">RESERVATIONS</a></li>
+                        <li className="lead-text"><a href="/reservations">RESERVATIONS</a></li>
                         <li className="lead-text"><a href="#">ORDER ONLINE</a></li>
                         <li className="lead-text"><a href="#">LOGIN</a></li>
                     </ul>

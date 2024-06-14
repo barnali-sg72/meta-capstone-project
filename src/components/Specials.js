@@ -16,7 +16,7 @@ function Specials() {
             </div>
             <div className="card-list">
                 <article className="specials-card bg-lightgrey">
-                    <img src={greekSalad}/>
+                    <img src={greekSalad} alt="greek salad"/>
                     <div className="card-content">
                         <div className="card-header">
                             <h4>Greek Salad</h4>
@@ -26,7 +26,7 @@ function Specials() {
                             A classic Mediterranean dish that showcases the vibrant flavors and 
                             fresh ingredients typical of Greek cuisine.
                         </p>
-                        <a role="button">
+                        <a href="#">
                             <span className="lead-text">Order for delivery</span>
                             <span><MdOutlineMoped size={20} className="icon"/></span>
                         </a>
@@ -43,7 +43,7 @@ function Specials() {
                             A traditional Italian appetizer that consists of grilled bread 
                             rubbed with garlic and topped with a variety of ingredients.
                         </p>
-                        <a role="button">
+                        <a href="#">
                             <span className="lead-text">Order for delivery</span>
                             <span><MdOutlineMoped size={20} className="icon"/></span>
                         </a>
@@ -59,7 +59,7 @@ function Specials() {
                         <p className="paragraph-text">
                             A rich and creamy dessert with a tangy lemon flavor
                         </p>
-                        <a role="button">
+                        <a href="#">
                             <span className="lead-text">Order for delivery</span>
                             <span><MdOutlineMoped size={20} className="icon"/></span>
                         </a>

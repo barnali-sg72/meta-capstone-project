@@ -9,7 +9,7 @@ function CustomerRatings() {
                 <article className="cust-card bg-lightgrey">
                     <div className="rating"><Rating num={5}/></div>
                     <div className="cust-details">
-                        <Avatar className="cust-avatar" name="John Doe"></Avatar>
+                        <Avatar className="cust-avatar" name="John Doe" alt="John Doe"></Avatar>
                         <h4>John Doe</h4>
                     </div>
                     <p>
@@ -20,7 +20,7 @@ function CustomerRatings() {
                 <article className="cust-card bg-lightgrey">
                     <div className="rating"><Rating num={4}/></div>
                     <div className="cust-details">
-                        <Avatar className="cust-avatar" name="Paul Smith"></Avatar>
+                        <Avatar className="cust-avatar" name="Paul Smith" alt="Paul Smith"></Avatar>
                         <h4>Paul Smith</h4>
                     </div>
                     <p>
@@ -30,7 +30,7 @@ function CustomerRatings() {
                 <article className="cust-card bg-lightgrey">
                     <div className="rating"><Rating num={5}/></div>
                     <div className="cust-details">
-                        <Avatar className="cust-avatar" name="Mary Kessler"></Avatar>
+                        <Avatar className="cust-avatar" name="Mary Kessler" alt="Mary Kessler"></Avatar>
                         <h4>Mary Kessler</h4>
                     </div>
                     <p>
@@ -40,7 +40,7 @@ function CustomerRatings() {
                 <article className="cust-card bg-lightgrey">
                     <div className="rating"><Rating num={3}/></div>
                     <div className="cust-details">
-                        <Avatar className="cust-avatar" name="Ross Anderson"></Avatar>
+                        <Avatar className="cust-avatar" name="Ross Anderson" alt="Ross Anderson"></Avatar>
                         <h4>Ross Anderson</h4>
                     </div>
                     <p>

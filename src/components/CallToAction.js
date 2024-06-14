@@ -1,6 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import food from "../images/restauranfood.jpg"
 
 function CallToAction() {
+    const navigate = useNavigate();
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        navigate("/bookingPage");
+    }
+    
     return (
         <section className="hero bg-green">
             <article>
@@ -11,7 +19,7 @@ function CallToAction() {
                     by our expert chefs. Savor exquisite dishes in an ambiance of sophistication 
                     and style. Make your reservation now.
                 </p>
-                <button className="bg-yellow">Reserve a table</button>
+                <button className="bg-yellow" onClick={handleClick}>Reserve a table</button>
             </article> 
             <img src={food} alt="food"></img>                
         </section>
