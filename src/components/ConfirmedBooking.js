@@ -8,7 +8,11 @@ function ConfirmedBooking({formData}) {
             <section className="head">
                 <span>
                     <h1 className="yellow">Little Lemon</h1>
-                    <h2 className="white">Chicago</h2>                    
+                    <h2 className="white">Chicago</h2>    
+                    <p className="white">
+                        Thank you for choosing Little Lemon! We are looking forward to welcoming you to our restaurant.
+                        If you need to make any changes or have any questions, please do not hesitate to contact us.
+                    </p>                
                 </span>
                 <img src={image1} alt="image1"/>
             </section>  

@@ -4,7 +4,7 @@ import Rating from "./Rating";
 function CustomerRatings() {
     return (
         <section className="ratings">
-            <h4>Testimonials</h4>
+            <h2>Testimonials</h2>
             <div className="card-list">
                 <article className="cust-card bg-lightgrey">
                     <div className="rating"><Rating num={5}/></div>

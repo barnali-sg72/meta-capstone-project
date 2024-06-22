@@ -91,8 +91,12 @@ body {
     width: 50%;
   }
 
-  body .confirmation .head {
+  /*body .confirmation .head {
     gap: 0px;
+  }*/
+
+  body div.area-options {
+    max-width: 50%;
   }
 }
 
@@ -377,6 +381,14 @@ footer {
   text-decoration: none;
 }
 
+.footer-item dd {
+  margin-left: 0px;
+  margin-bottom: 15px;
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .footer-logo img{
   width: 60%;
   height: auto;
@@ -438,7 +450,7 @@ h1 {
 
 .booking form input:not(.btn):not([type=radio]), .booking form select {
   height: 40px;
-  border-radius: 5px;
+  border-radius: 16px;
   padding-left: 5px;
   font-size: 16px;
 }
@@ -457,6 +469,16 @@ h1 {
   transform: scale(1.5);
 }
 
+div.area-options {
+  border: 2px solid white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  max-width: 80%;
+}
+
 /* Confirmation */
 
 .confirmation .message {
@@ -469,12 +491,12 @@ h1 {
 .confirmation .head {
   display: flex;
   flex-direction: column;
-  padding: 30px;
   gap: 30px;
 }
 
 .confirmation h2{
   margin-bottom: 0px;
+  margin-top: 5px;
 }
 
 .confirmation h6{
@@ -510,6 +532,10 @@ h1 {
 
 .confirmation li {
   margin-bottom: 10px;
+}
+
+.confirmation {
+  padding: 30px;
 }
 
 /*.confirmation summary span:nth-child(odd) {
@@ -686,4 +712,23 @@ img {
 .icon {
   margin-left: 10px;
   vertical-align: middle;
+}
+
+input:has( + .error), select:has( + .error) {
+  border: 3px solid #bf0000;
+  background-color: #f3afaf;
+  border-radius: 16px;
+}
+
+.area-options:has( + .error) {
+  border: 3px solid #bf0000;
+  border-radius: 16px;
+}
+
+.error span{
+  vertical-align: middle;
+}
+
+.error span.text {
+  margin-top: 0px;
 }

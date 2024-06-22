@@ -7,7 +7,7 @@ function ReservationsPage({reservations, deleteReservation}) {
         <section className="reservations">
             <CallToAction />
             <section className="list bg-green white">
-                <h2 className="section-title">RESERVATIONS</h2>
+                <h2>Reservations</h2>
                 <table>
                     <thead>
                         <th>Name</th>
@@ -27,7 +27,8 @@ function ReservationsPage({reservations, deleteReservation}) {
                             <td>{res.occasion}</td>
                             <td>{res.guests}</td>
                             <td>{res.area}</td>
-                            <td><FaTrash className="faicon" onClick={() => deleteReservation(ind)}/></td>
+                            <td><FaTrash className="faicon" aria-label="Delete Reservation" 
+                                onClick={() => deleteReservation(ind)}/></td>
                         </tr>
                     )) : <tr>
                             <td colSpan={7}>There are no reservations to display</td>

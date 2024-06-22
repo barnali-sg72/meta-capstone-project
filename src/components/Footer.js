@@ -20,11 +20,14 @@ function Footer() {
                 </div>
                 <div className="footer-item">
                     <h6 className="section-title">CONTACT</h6>
-                    <ul>
-                        <li className="lead-text">Address</li>
-                        <li className="lead-text">Phone</li>
-                        <li className="lead-text">Email</li>
-                    </ul>
+                    <dl class="contact-list">
+                        <dt className="section-category">ADDRESS</dt>
+                        <dd>123 South Lake Avenue, Chicago, USA</dd>
+                        <dt className="section-category">EMAIL</dt>
+                        <dd><a href="mailto:#">little.lemon@gmail.com</a></dd>
+                        <dt className="section-category">PHONE</dt>
+                        <dd><a href="tel:#">1.666.619.322</a></dd>
+                    </dl>                    
                 </div> 
                 <div className="footer-item">
                     <h6 className="section-title">SOCIAL MEDIA LINKS</h6>

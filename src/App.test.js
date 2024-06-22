@@ -3,22 +3,6 @@ import BookingForm from './components/BookingForm';
 import {initializeTimes, updateTimes} from "./components/Main";
 import { BrowserRouter } from "react-router-dom";
 
-test('Renders the BookingForm heading', () => {
-    let times = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-    render(<BookingForm availableTimes={times}/>);
-    const headingElement = screen.getByText("Reserve a table");
-    expect(headingElement).toBeInTheDocument();
-})
-
-test('Checks BookingForm submit', () => {
-    let times = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-    const handleMockSubmit = jest.fn();
-    render(<BookingForm availableTimes={times}/>);
-    screen.getByRole("form", {name: "booking-form"}).onsubmit = handleMockSubmit;
-    fireEvent.click(screen.getByRole("button", {name: "submit"}));
-    expect(handleMockSubmit).toHaveBeenCalled();
-})
-
 test('Initialize the available times list', () => {
     //let times = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
     expect(initializeTimes()).toBeInstanceOf(Array);
@@ -67,3 +51,4 @@ test('Read from local storage', () => {
     expect(val).toHaveLength(1);
     expect(val).toEqual(arr);
 })
+

@@ -3,16 +3,17 @@ import image1 from "../images/restaurant.jpg";
 import image2 from "../images/restaurant1.jpg";
 import image3 from "../images/restaurant2.jpg";
 import { useState } from "react";
+import { useFormik } from "formik";
 
 function BookingPage({availableTimes, dispatch, submitForm}) {
     
     const [bookingData, setBookingData] = useState({
         customerName: "",
-        date: (new Date()).toLocaleDateString(),
-        time: "17:00",
-        guests: 1,
-        occasion: "Birthday",
-        area: "Indoor"
+        date: "",
+        time: "",
+        guests: 0,
+        occasion: "",
+        area: ""
     })
     
     const handleChange = (e) => {
@@ -24,10 +25,18 @@ function BookingPage({availableTimes, dispatch, submitForm}) {
         } 
     }
 
-    const onSubmit = (e) => {
+    const handleDateChange = (e) => {
+        let name = e.currentTarget.name;
+        let val = e.currentTarget.value;
+        if (name === "date") {
+            dispatch(val);
+        } 
+    }
+
+    /*const onSubmit = (e) => {
         e.preventDefault();
         submitForm(bookingData);
-    }
+    }*/
 
     return (
         <section className="booking bg-green">
@@ -46,7 +55,7 @@ function BookingPage({availableTimes, dispatch, submitForm}) {
                 <img src={image1} alt="image1"/>
             </div>           
             <BookingForm bookingData={bookingData} availableTimes={availableTimes} 
-                handleChange={handleChange} onSubmit={onSubmit}/>
+                handleDateChange={handleDateChange} submitForm={submitForm}/>
         </section>
     )
 }

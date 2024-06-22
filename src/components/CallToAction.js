@@ -19,7 +19,7 @@ function CallToAction() {
                     by our expert chefs. Savor exquisite dishes in an ambiance of sophistication 
                     and style. Make your reservation now.
                 </p>
-                <button className="bg-yellow" onClick={handleClick}>Reserve a table</button>
+                <button className="bg-yellow" aria-label="Reserve a table" onClick={handleClick}>Reserve a table</button>
             </article> 
             <img src={food} alt="food"></img>                
         </section>
