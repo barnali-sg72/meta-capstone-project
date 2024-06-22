@@ -33,8 +33,7 @@ body {
   }
 
   body .hero {
-    gap: 100px;
-    padding: 20px 50px 20px 70px;
+    justify-content: space-between;
   }
 
   body .specials-card {
@@ -50,6 +49,11 @@ body {
     margin-left: 0px;
   }
 
+  body .images {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
   body .about img {
     width: 300px;
   }
@@ -59,22 +63,22 @@ body {
   }
 
   body .hero img {
-    width: 30%;
+    width: 40%;
     align-self: center;
     object-fit: cover;
-  }
-
-  body .about article {
-    width: 50%;
   }
 
   body .footer-item{
     width: 20%;
   }
 
-  body .booking, body .confirmation {
+  /*body .booking, body .confirmation, body .hero {
     padding: 35px 50px 20px 70px;
   }
+
+  body .about {
+    padding: 35px 50px 35px 70px;
+  }*/
 
   body .booking .head {
     display: grid;
@@ -118,20 +122,22 @@ body {
     align-items: normal;
   }
 
-  body .hero {
-    gap: 200px;
-  }
-
   body .about article {
     width: 50%;
   }
 
-  body .images img:first-child {
-    margin-left: 100px;
+  body .images {
+    width: auto;
+    justify-content: space-evenly;
   }
 
+  /*body .images img:first-child {
+    margin-left: 100px;
+  }*/
+
   body .about img {
-    width: 400px;
+    width: 250px;
+    object-fit: fill;
   }
 
   body nav ul {
@@ -141,6 +147,14 @@ body {
 
   body header {
     gap: 20%;
+  }
+
+  body .booking, body .confirmation, body .hero {
+    padding: 35px 50px 20px 70px;
+  }
+
+  body .about {
+    padding: 35px 50px 35px 70px;
   }
 
 }
@@ -183,6 +197,11 @@ nav li a {
   text-decoration: none;
 }
 
+nav li a:hover {
+ /*background-color: #EDEFEE;*/
+ font-weight: bolder;
+}
+
 /* MAIN STYLES */
 
 .home {
@@ -198,9 +217,9 @@ nav li a {
   align-items: center;
 }
 
-.hero button {
+/*.hero button {
   margin-top: 100px;
-}
+}*/
 
 .hero img {
   width: 70%;
@@ -213,7 +232,7 @@ nav li a {
   width: 100%;
 }
 
-.hero h2 {
+.hero h2, .about h2 {
   margin-top: 5px;
   margin-bottom: 20px;
 }
@@ -343,9 +362,10 @@ nav li a {
 
 .images {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 20px;
+  gap: 20px;
 }
 /* FOOTER STYLES */
 
@@ -440,7 +460,7 @@ h1 {
 
 .booking img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: fill;
 }
 
@@ -696,8 +716,14 @@ table tr:last-child td:last-child {
 
 /* button */
 button, .btn{
+  border: none;
   border-radius: 16px;
   padding: 10px;
+}
+
+button:active {
+  background-color: #EE9972;
+  color: black;
 }
 
 img {

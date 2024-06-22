@@ -6,6 +6,7 @@ import { useReducer, useState, useEffect } from "react";
 import { fetchAPI, submitAPI } from "../api";
 import ConfirmedBooking from "./ConfirmedBooking";
 import ReservationsPage from "./ReservationsPage";
+import About from "./About";
 
 //let script = null;
 /* reducer */
@@ -69,6 +70,7 @@ function Main() {
             <main>
                 <Routes>
                     <Route path="/" element={<HomePage />}></Route>
+                    <Route path="/about" element={<About />}></Route>
                     <Route path="/reservations" element={<ReservationsPage reservations={reservations}
                         deleteReservation={deleteReservation}/>}></Route>
                     <Route path="/bookingPage" element={<BookingPage availableTimes={availableTimes} 
